@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8"/>	
+
+<style type="text/css">
+
+body {
+  font-family: system-ui, sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  background: #FFFAF2;
+  color: #34495e; 
+  height: 100vh;
+}
+
+
+header {
+  padding: 10%;
+  text-align: center;
+  background: #84CFBE;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+}
+
+main {
+  background: #FFFAF2;
+  padding: 1rem;
+  font-size: 40px;
+}
+
+footer {
+  padding: 1rem;
+  align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+button {
+	background: #84CFBE;
+	padding: 1rem;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 60px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    line-height: 3em;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+p {
+	font-size: 600px:;
+}
+
+</style>
+</head>
+<body>
+	<header class="grid-item" id="header"></header>
+	<main class="grid-item">
+		<div class="text" id="text_field">
+			<p></p>
+		</div>
+	</main>
+	<footer class="grid-item">
+		<button id="button">Weiter</button>
+	</footer>
+	<script type="text/javascript" src="text_learning.js"></script>
+</body>
+</html>
