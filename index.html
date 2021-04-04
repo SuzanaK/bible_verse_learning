@@ -5,13 +5,18 @@
 
 <style type="text/css">
 
+html {
+  height: 100%; 
+}
+
 body {
+  height: 100%;
+  display: flex;
   font-family: system-ui, sans-serif;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
   background: #FFFAF2;
   color: #34495e; 
-  height: 80%;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -20,20 +25,26 @@ body {
 
 
 header {
-  padding: 10%;
+  padding: 2rem;
   text-align: center;
   background: #84CFBE;
+    align-items: center;
+ justify-content: center;
+ text-align: center;
+
 }
 
 
 h1 {
 	text-align: center;
 	font-size: 60px;
+  vertical-align: middle;
+
 }
 
 main {
   background: #FFFAF2;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 footer {
