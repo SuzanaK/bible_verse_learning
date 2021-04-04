@@ -45,7 +45,7 @@ function getTextUntilNextNoun(words, i) {
 	}
 	const nextNoun = words[nextNounIndex];
 	const wordsToShow = words.slice(0, nextNounIndex);
-	const textToShow = wordsToShow.join(' ') + ' ' + nextNoun[0] + '...'; 
+	const textToShow = wordsToShow.join(' ') + ' ' + nextNoun[0] + '_'.repeat(nextNoun.length - 1);
 
 	result.textToShow = textToShow;
 	result.currentNoun = nextNoun;
@@ -78,9 +78,9 @@ function onClick() {
 	currentWordArray = currentWordArray.filter(x => (x != null && x != ''));
 	const result = getTextUntilNextNoun(currentWordArray, currentWordIndex);
 
-	// set text field 
-	//textField.innerHTML = '<p>' + result.textToShow + '</p>';	
-	textField.innerHTML = result.textToShow;	
+	// set text field
+	//textField.innerHTML = '<p>' + result.textToShow + '</p>';
+	textField.innerHTML = result.textToShow;
 
 	// update for next round
 	currentWordIndex = result.currentWordIndex;
