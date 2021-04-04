@@ -81,7 +81,8 @@ function onClick() {
 	const result = getTextUntilNextNoun(currentWordArray, currentWordIndex);
 
 	// set text field 
-	textField.innerHTML = '<p>' + result.textToShow + '</p>';	
+	//textField.innerHTML = '<p>' + result.textToShow + '</p>';	
+	textField.innerHTML = result.textToShow;	
 
 	// update for next round
 	currentWordIndex = result.currentWordIndex;
