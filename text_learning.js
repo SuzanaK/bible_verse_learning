@@ -1,4 +1,4 @@
-const texts = [{"text_ref": "Römer 12:10", "text_content": "Liebt einander wie Brüder und habt innige Zuneigung zueinander. Ergreift die Initiative, wenn es darum geht, einander Ehre zu erweisen."}, {"text_ref": "Jakobus 5:11", "text_content": "Wir betrachten die als glücklich, die ausgeharrt haben. Ihr habt vom Ausharren Hiobs gehört und habt gesehen, wie Jehova das Ganze ausgehen ließ, dass Jehova voll inniger Liebe und barmherzig ist."}]
+const texts = [{"text_ref": "Römer 12:10", "text_content": "Liebt einander wie Brüder und habt innige Zuneigung zueinander. Ergreift die Initiative, wenn es darum geht, einander Ehre zu erweisen."}, {"text_ref": "Römer 12:2", "text_content": "Und lasst euch nicht mehr von diesem Weltsystem formen, sondern werdet durch die Neugestaltung eures Denkens umgewandelt, damit ihr durch Prüfung feststellen könnt, was der gute und annehmbare und vollkommene Wille Gottes ist."}, {"text_ref": "1. Johannes 4:8", "text_content": "Wer nicht liebt, hat Gott nicht kennengelernt, denn Gott ist Liebe."}, {"text_ref": "Jakobus 5:11", "text_content": "Wir betrachten die als glücklich, die ausgeharrt haben. Ihr habt vom Ausharren Hiobs gehört und habt gesehen, wie Jehova das Ganze ausgehen ließ, dass Jehova voll inniger Liebe und barmherzig ist. "}, {"text_ref": "2. Mose 34:6", "text_content": "Jehova ging vor ihm vorbei und rief aus: „Jehova, Jehova, ein Gott, der barmherzig und mitfühlend ist, der nicht schnell zornig wird und reich ist an loyaler Liebe und Wahrheit."}, {"text_ref": "Psalm 51:1", "text_content": "Schenk mir deine Gunst, o Gott, in deiner loyalen Liebe. Lösch meine Übertretungen aus in deiner großen Barmherzigkeit."}, {"text_ref": "Jesaja 49:15", "text_content": "Kann eine Frau ihren Säugling vergessen, wird sie für den Sohn, den sie unter dem Herzen trug, kein Mitgefühl empfinden? Und selbst wenn diese Frauen vergessen, ich würde dich nie vergessen."}, {"text_ref": "Psalm 37:39", "text_content": "Die Rettung der Gerechten kommt von Jehova. Er ist ihre Festung in Zeiten der Not."}, {"text_ref": "1. Korinther 10:13", "text_content": "Ihr seid keiner Versuchung ausgesetzt, der nicht auch andere Menschen ausgesetzt sind. Gott aber ist treu, und er wird nicht zulassen, dass ihr über eure Kraft hinaus versucht werdet, sondern er wird mit der Versuchung auch den Ausweg schaffen, damit ihr sie ertragen könnt."}, {"text_ref": "Epheser 4:32", "text_content": "Geht vielmehr freundlich miteinander um, seid von Herzen mitfühlend, vergebt einander großzügig, so wie auch Gott euch durch Christus großzügig vergeben hat."}, {"text_ref": "Epheser 5:1", "text_content": "Darum nehmt euch Gott zum Vorbild als geliebte Kinder."}]
 
 function isTitle(str)
 {
@@ -64,8 +64,6 @@ function updateHeader() {
 function onClick() {
 
 	updateHeader();
-	console.log(currentVerseIndex);
-	console.log(currentWordIndex);
 
 	const textField = document.getElementById("text_field");
 	const currentVerse = texts[currentVerseIndex];
